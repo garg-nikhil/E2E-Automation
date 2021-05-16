@@ -5,4 +5,58 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Random Websites Automation</name>
   <description>Random Websites Automation using selenium+testNG+POM+listners</description>
+ <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+           	<artifactId>maven-compiler-plugin</artifactId>
+           	<version>3.6.1</version>
+           	<configuration>
+           		<source>1.8</source>
+           		<target>1.8</target>
+           	</configuration>
+  		</plugin>
+  		
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+           	<artifactId>maven-surefire-plugin</artifactId>
+           	<version>2.20</version>
+           	<configuration>
+           	 	<suiteXmlFiles>
+           			<suiteXmlFile>testng.xml</suiteXmlFile>
+           			<!-- <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile> -->
+           		</suiteXmlFiles>
+           	</configuration>
+  		</plugin>
+  	</plugins>  
+  </build>
+ <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependencies>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.9.10</version>
+    
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>4.0.9</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.directory.studio/org.apache.commons.io -->
+<dependency>
+    <groupId>org.apache.directory.studio</groupId>
+    <artifactId>org.apache.commons.io</artifactId>
+    <version>2.4</version>
+</dependency>
+</dependencies>
+  
+  
 </project>
